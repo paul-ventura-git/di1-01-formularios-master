@@ -6,7 +6,32 @@ export default class Persona {
         this.dni = dni;
     }
 
+    // Getters y Setters // Encapsulamiento
+    setNombre(nombre) {
+        this.nombre = nombre;
+    }
+
+    getNombre() {
+        return this.nombre;
+    }
+
+    setApellido(apellido) {
+        this.apellido = apellido;
+    }
+
+    getApellido() {
+        return this.apellido;
+    }
+
+    setDni(dni) {
+        this.dni = dni;
+    }
+
+    getDni() {
+        return this.dni;
+    }
+
     getNombreCompleto() {
-        return `${this.nombre} ${this.apellido}`;
+        return `${this.getNombre()} ${this.getApellido()}`; //Encapsulamiento
     }
 }

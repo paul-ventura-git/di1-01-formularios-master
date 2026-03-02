@@ -1,6 +1,7 @@
 import PrestadorDeServicio from './PrestadorDeServicio.js';
 
 const prestadores = [
+    // Instanciar objetos de la clase PrestadorDeServicio con datos de ejemplo
     new PrestadorDeServicio(1, "Pedro", "Martínez", "44556677", "Electricista"),
     new PrestadorDeServicio(2, "Sofía", "Castro", "22334455", "Gasfitero"),
     new PrestadorDeServicio(3, "Miguel", "Rojas", "66778899", "Carpintero"),
