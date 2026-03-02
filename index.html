@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Comprobantes</title>
+</head>
+<body>
+
+  <nav>
+      <a href="index.html">Registrar</a>
+      <a href="Dashboard.html">Dashboard</a>
+  </nav>
+
+  <h2>Registro de Comprobante de Pago</h2>
+
+  <form id="formComprobante">
+      <label>Número de Boleta:</label>
+      <input type="text" id="numero_boleta" required><br><br>
+
+      <label>ID Cliente:</label>
+      <input type="number" id="id_cliente" required><br><br>
+
+      <label>ID Prestador:</label>
+      <input type="number" id="id_prestador" required><br><br>
+
+      <label>Fecha y Hora:</label>
+      <input type="datetime-local" id="fechaHora" required><br><br>
+
+      <label>Monto:</label>
+      <input type="number" id="monto" step="0.01" required><br><br>
+
+      <label>IGV (18%):</label>
+      <input type="number" id="igv" readonly><br><br>
+
+      <label>Total:</label>
+      <input type="number" id="total" readonly><br><br>
+
+      <button type="submit">Registrar</button>
+  </form>
+
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
