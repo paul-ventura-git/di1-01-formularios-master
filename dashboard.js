@@ -3,6 +3,7 @@ import clientes from '/data/ListaClientes.js';
 import prestadores from '/data/ListaPrestadores.js';
 import { obtenerDeStorage } from '/helpers/storageHelper.js';
 import { renderizarTabla } from '/helpers/uiHelper.js';
+import { buscarEnTabla } from '/helpers/uiHelper.js';
 
 renderizarTabla("#tablaClientes tbody", clientes, [
     "id",
@@ -29,3 +30,7 @@ renderizarTabla("#tablaComprobantes tbody", comprobantes, [
     "igv",
     "total"
 ]);
+
+buscarEnTabla("#buscarClientes", "#tablaClientes");
+buscarEnTabla("#buscarPrestadores", "#tablaPrestadores");
+buscarEnTabla("#buscarComprobantes", "#tablaComprobantes");
