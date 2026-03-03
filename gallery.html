@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Prestadores</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #f4f6f9;
+            border: 2px solid #ddd;
+            padding: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 1000px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <nav style="text-align: end;">
+      <a href="index.html">Registrar</a>
+      <a href="Gallery.html">Galería</a>
+      <a href="Dashboard.html">Dashboard</a>
+  </nav>
+
+<h1>Galería de Prestadores de Servicio</h1>
+
+<div class="container">
+    <div class="grid" id="gridPrestadores"></div>
+</div>
+
+<script type="module" src="gallery.js"></script>
+
+</body>
+</html>

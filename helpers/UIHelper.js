@@ -21,11 +21,6 @@ export function renderizarTabla(tbodySelector, dataArray, columnas) {
     });
 }
 
-/**
- * Busca texto dentro de una tabla HTML
- * @param {string} inputSelector - selector del input
- * @param {string} tableSelector - selector de la tabla
- */
 export function buscarEnTabla(inputSelector, tableSelector) {
     const input = document.querySelector(inputSelector);
     const tabla = document.querySelector(tableSelector);
