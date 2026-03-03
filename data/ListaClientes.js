@@ -1,4 +1,4 @@
-import Cliente from './Cliente.js';
+import Cliente from '/entities/Cliente.js';
 
 const clientes = [
     // Instanciar objetos de la clase Cliente con datos de ejemplo

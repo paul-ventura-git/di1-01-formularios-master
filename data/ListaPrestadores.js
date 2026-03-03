@@ -1,4 +1,4 @@
-import PrestadorDeServicio from './PrestadorDeServicio.js';
+import PrestadorDeServicio from '/entities/PrestadorDeServicio.js';
 
 const prestadores = [
     // Instanciar objetos de la clase PrestadorDeServicio con datos de ejemplo

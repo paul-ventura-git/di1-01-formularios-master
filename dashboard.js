@@ -1,6 +1,6 @@
 // dashboard.js
-import clientes from './ListaClientes.js';
-import prestadores from './ListaPrestadores.js';
+import clientes from '/data/ListaClientes.js';
+import prestadores from '/data/ListaPrestadores.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     cargarClientes();
