@@ -1,6 +1,5 @@
-import Comprobante from './Comprobante.js';
-import clientes from './ListaClientes.js';
-import prestadores from './ListaPrestadores.js';
+import Comprobante from '/entities/Comprobante.js';
+import { agregarAlStorage } from '/helpers/storageHelper.js';
 
 const form = document.getElementById("formComprobante");
 const montoInput = document.getElementById("monto");
@@ -34,7 +33,7 @@ form.addEventListener("submit", (e) => {
     comprobantes.push(comprobante);
 
     // Actualizar el localStorage con el nuevo comprobante
-    localStorage.setItem("comprobantes", JSON.stringify(comprobantes));
+    agregarAlStorage("comprobantes", comprobante);
 
     alert("Comprobante registrado correctamente");
 
