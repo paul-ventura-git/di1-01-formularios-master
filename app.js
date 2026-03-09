@@ -28,10 +28,6 @@ form.addEventListener("submit", (e) => {
         document.getElementById("monto").value
     );
 
-    // Insertar en array "comprobantes"
-    let comprobantes = JSON.parse(localStorage.getItem("comprobantes")) || [];
-    comprobantes.push(comprobante);
-
     // Actualizar el localStorage con el nuevo comprobante
     agregarAlStorage("comprobantes", comprobante);
 

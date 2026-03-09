@@ -2,16 +2,16 @@ export function renderizarTabla(tbodySelector, dataArray, columnas) {
     const tbody = document.querySelector(tbodySelector);
     tbody.innerHTML = "";
 
-    dataArray.forEach(obj => {
+    dataArray.forEach(attr => {
         const fila = document.createElement("tr");
 
         columnas.forEach(col => {
             const td = document.createElement("td");
 
             if (typeof col === "function") {
-                td.textContent = col(obj);
+                td.textContent = col(attr);
             } else {
-                td.textContent = obj[col];
+                td.textContent = attr[col];
             }
 
             fila.appendChild(td);
