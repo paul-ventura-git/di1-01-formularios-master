@@ -1,4 +1,3 @@
-// dashboard.js
 import clientes from '/data/ListaClientes.js';
 import prestadores from '/data/ListaPrestadores.js';
 import { obtenerDeStorage } from '/helpers/storageHelper.js';

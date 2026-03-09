@@ -1,5 +1,3 @@
-// Gallery.js
-
 import prestadores from '/data/ListaPrestadores.js';
 import ShoppingCart from '/entities/ShoppingCart.js';
 
