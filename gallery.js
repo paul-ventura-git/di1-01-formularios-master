@@ -8,6 +8,7 @@ const cart = new ShoppingCart();
 
 // Cargar carrito si existe en LocalStorage
 const cartGuardado = JSON.parse(localStorage.getItem("shoppingCart"));
+
 if (cartGuardado) {
     cart.items = cartGuardado.items;
 }
